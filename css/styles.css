@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 15px 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.menu {
+    padding: 15px 0;
+    background-color: white;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+

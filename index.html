@@ -5,106 +5,111 @@
         <title>Chances</title>
         <link rel="stylesheet" href="css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- font awesome icons -->
+        <script src="https://kit.fontawesome.com/51899e6930.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
-    <div class="container-fluid">
-        <div class="row">
-            <header>
-                <img src="#" alt="Chances logo" />
-                <nav class="navbar">
-                    <!-- menu que fica no topo da pagina (toggled) -->
-                </nav>
-
-                <nav class="navbar navbar-collapse">
-                    <!-- menu que aparece ao rolar a tela pra baixo -->
-                    <a href="#" class="navbar-brand"><img src="#" alt="Chances logo" /></a>
+        <header class="container-fluid">
+            <div class="row">
+                <!-- menu que fica toggled no topo da pagina // sumir com esse menu tb ao rolar a tela -->
+                <nav>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon d-inline"><i class="fas fa-bars"></i> Menu</span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Nossos Diferenciais</a>
-                            </li>
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Nosso Time</a>
-                            </li>
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Planos</a>
-                            </li>
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Fale Conosco</a>
-                            </li>
+                    <div id="navbarNav">
+                        <ul>
+                            <li>Home</li>
+                            <li>Diferenciais</li>
+                            <li>Nosso Time</li>
+                            <li>Fale Conosco</li>
                         </ul>
-                    </div><!-- collapse navbar -->
+                    </div><!-- #navbarNav -->
                 </nav>
-            </header>
-        </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Logo + Botões
-            </div><!--col-->
-        </div><!--row-->
+                <div class="col-sm-8 text-center" id="logo-topCenter"> <!-- sumir com essa img com javascript ao rolar a tela pra baixo -->
+                    <img src="#" alt="Chances logo" />
+                </div>
+            
+                <!-- menu que aparece ao rolar a tela pra baixo -->
+                <nav class="collapse menu col-sm-12 fixed-top">
+                    <div class="col-sm-4 d-inline-block">
+                        <a href="#"><img src="#" alt="Chances logo" /></a>
+                    </div>
 
-        <div class="row">
-            <div class="col-md-6">
-                <h1> Benefícios Pessoas
-            </div><!--col-->
-            <div class="col-md-6">
-                <h1> Benefícios Empresas
-            </div><!--col-->
-        </div><!--row-->
+                        <ul class="col-sm-7 d-inline-block menu text-right">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Diferenciais</li></a>
+                            <a href="#"><li>Nosso Time</li></a>
+                            <a href="#"><li>Fale Conosco</li></a>
+                        </ul>
+                </nav>
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Quadro 3
-            </div><!--col-->
-        </div><!--row-->
+            </div><!-- row -->
+        </header>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Logo + Botões
+                </div><!-- col -->
+            </div><!-- row -->
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h1> Benefícios Pessoas
+                </div><!-- col -->
+                <div class="col-md-6">
+                    <h1> Benefícios Empresas
+                </div><!-- col -->
+            </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Quadro 4
-            </div><!--col-->
-        </div><!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Quadro 3
+                </div><!-- col -->
+            </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Mockup Pessoas
-            </div><!--col-->
-        </div><!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Quadro 4
+                </div><!-- col -->
+            </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Mockup Startups
-            </div><!--col-->
-        </div><!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Mockup Pessoas
+                </div><!-- col -->
+            </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Time
-            </div><!--col-->
-        </div><!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Mockup Startups
+                </div><!-- col -->
+            </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Forms de novo
-            </div><!--col-->
-        </div><!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Time
+                </div><!-- col -->
+            </div><!-- row -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1> Rodapé
-            </div><!--col-->
-        </div><!--row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Forms de novo
+                </div><!-- col -->
+            </div><!-- row -->
 
-    </div><!-- container-fluid -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Rodapé
+                </div><!-- col -->
+            </div><!-- row -->
+            
+        </div><!-- container-fluid -->
         
 
 
