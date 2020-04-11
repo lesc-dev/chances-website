@@ -1,3 +1,22 @@
+/****************/
+/* TOP IMAGE */
+/***************/
+
+.image-container{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-image: url("../images/top-background.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:100%;
+    
+}
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +35,6 @@ ul li {
 
 .menu {
     padding: 15px 0;
-    background-color: white;
 }
 
 .menu ul li {
@@ -24,6 +42,13 @@ ul li {
     margin: 0 10px;
 }
 
+.menu-links-dark li{
+    color: white;
+}
+
+.menu-links-light li{
+    color: magenta;
+}
 
 /***************/
 /* Nosso Time */
@@ -42,9 +67,17 @@ ul li {
     margin-bottom: 70px;
 }
 
-.team .slick-container img {
-    width: 30%;
-    border-radius: 50%;
+.team .slick-single-content img {
+    width: 30%; 
+    text-align: center;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.team .slick-single-content{
+    text-align: center;
 }
 
 input, textarea {
@@ -55,6 +88,23 @@ input, textarea {
     margin-bottom: 10px;
 }
 
+.slick-dots li button:before
+{
+    font-size: 20px !important;
+    color: magenta !important;
+    line-height: 20px;
+}
+
+.social-link {
+    font-size: 20px;
+    color: magenta;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.social-link:hover {
+    color: #fc7ffc
+}
 
 /********/
 /* Form */

@@ -11,40 +11,25 @@
         <!-- font awesome icons -->
         <script src="https://kit.fontawesome.com/51899e6930.js" crossorigin="anonymous"></script>
         <!-- slickJS -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
         
     </head>
     
     <body>
         <header class="container-fluid">
+            <div style="min-height:100vh">
+                    <div class="image-container"></div>
+                    <h1 class="text-center" style=" padding-top: 30vh; color:white; position:relative; font-size: 6vh; text-align: center; text-decoration: none;"> Chances </h1>
+            </div>
             <div class="row">
-                <!-- menu que fica toggled no topo da pagina // sumir com esse menu tb ao rolar a tela -->
-                <nav class="">
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon d-inline"><i class="fas fa-bars"></i> Menu</span>
-                    </button>
-
-                    <div id="navbarNav" class="collapse">
-                        <ul>
-                            <li>Home</li>
-                            <li>Diferenciais</li>
-                            <li>Nosso Time</li>
-                            <li>Fale Conosco</li>
-                        </ul>
-                    </div><!-- #navbarNav -->
-                </nav>
-
-                <div class="col-sm-8 text-center" id="logo-topCenter"> <!-- sumir com essa img com javascript ao rolar a tela pra baixo -->
-                    <img src="#" alt="Chances logo" />
-                </div>
-            
                 <!-- menu que aparece ao rolar a tela pra baixo -->
-                <nav class="collapse menu col-sm-12 fixed-top">
+                <nav class="menu col-sm-12 fixed-top">
                     <div class="col-sm-4 d-inline-block">
                         <a href="#"><img src="#" alt="Chances logo" /></a>
                     </div>
 
-                        <ul class="col-sm-7 d-inline-block menu text-right">
+                        <ul class="col-sm-7 d-inline-block menu text-right menu-links-dark">
                             <a href="#"><li>Home</li></a>
                             <a href="#"><li>Diferenciais</li></a>
                             <a href="#"><li>Nosso Time</li></a>
@@ -54,15 +39,15 @@
 
             </div><!-- row -->
         </header>
-        
+
         <div class="container-fluid">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-12">
                     <h1> Logo + Botões</h1>
                 </div><!-- col -->
             </div><!-- row -->
             
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-6">
                     <h1> Benefícios Pessoas</h1>
                 </div><!-- col -->
@@ -71,55 +56,55 @@
                 </div><!-- col -->
             </div><!-- row -->
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-12">
                     <h1> Quadro 3</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-12">
                     <h1> Quadro 4</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-12">
                     <h1> Mockup Pessoas</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-12">
                     <h1> Mockup Startups</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
             <div class="row text-center">
-                <div class="team">
+                <div class="team col-md-12">
                     <h3>Nosso Time</h3>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque.</h5>
                     <!-- ## TO DO: FIX THE SLIDER ## -->
                     <div class="slick-container">
                         <div class="slick-single-content">
-                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 1" />
+                            <img class="img-fluid" src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 1" />
                             <p>Membro 1</p>
-                            <span>logos redes sociais</span>
+                            <span><a class="social-link"><i class="fab fa-linkedin-in"></i></a> <a class="social-link"><i class="fab fa-github"></i></a></span>
                         </div><!-- slick-single-content -->
                         <div class="slick-single-content">
-                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 2" />
+                            <img class="img-fluid" src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 2" />
                             <p>Membro 2</p>
-                            <span>logos redes sociais</span>
+                            <span><a class="social-link"><i class="fab fa-linkedin-in"></i></a> <a class="social-link"><i class="fab fa-github"></i></a></span>
                         </div><!-- slick-single-content -->
                         <div class="slick-single-content">
-                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 3" />
+                            <img class="img-fluid" src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 3" />
                             <p>Membro 3</p>
-                            <span>logos redes sociais</span>
+                            <span><a class="social-link"><i class="fab fa-linkedin-in"></i></a> <a class="social-link"><i class="fab fa-github"></i></a></span>
                         </div><!-- slick-single-content -->
                         <div class="slick-single-content">
-                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 4" />
+                            <img class="img-fluid" src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 4" />
                             <p>Membro 4</p>
-                            <span>logos redes sociais</span>
+                            <span><a class="social-link"><i class="fab fa-linkedin-in"></i></a> <a class="social-link"><i class="fab fa-github"></i></a></span>
                         </div><!-- slick-single-content -->
 
                     </div><!-- slick-container -->
@@ -137,7 +122,7 @@
                         <button class="w-25" type="submit">Enviar</button>
                     </form>
                 </div><!-- col -->
-            </div><!-- row -->
+            </div>row
 
             <div class="row">
                 <div class="col-md-12">
