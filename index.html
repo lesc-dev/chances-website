@@ -7,20 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <!-- bootstrap CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
         <!-- font awesome icons -->
         <script src="https://kit.fontawesome.com/51899e6930.js" crossorigin="anonymous"></script>
+        <!-- slickJS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> 
+        
     </head>
     
     <body>
         <header class="container-fluid">
             <div class="row">
                 <!-- menu que fica toggled no topo da pagina // sumir com esse menu tb ao rolar a tela -->
-                <nav>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon d-inline"><i class="fas fa-bars"></i> Menu</span>
                     </button>
 
-                    <div id="navbarNav">
+                    <div id="navbarNav" class="collapse">
                         <ul>
                             <li>Home</li>
                             <li>Diferenciais</li>
@@ -54,58 +58,90 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Logo + Botões
+                    <h1> Logo + Botões</h1>
                 </div><!-- col -->
             </div><!-- row -->
             
             <div class="row">
                 <div class="col-md-6">
-                    <h1> Benefícios Pessoas
+                    <h1> Benefícios Pessoas</h1>
                 </div><!-- col -->
                 <div class="col-md-6">
-                    <h1> Benefícios Empresas
+                    <h1> Benefícios Empresas</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Quadro 3
+                    <h1> Quadro 3</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Quadro 4
+                    <h1> Quadro 4</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Mockup Pessoas
+                    <h1> Mockup Pessoas</h1>
                 </div><!-- col -->
             </div><!-- row -->
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Mockup Startups
+                    <h1> Mockup Startups</h1>
+                </div><!-- col -->
+            </div><!-- row -->
+
+            <div class="row text-center">
+                <div class="team">
+                    <h3>Nosso Time</h3>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque.</h5>
+                    <!-- ## TO DO: FIX THE SLIDER ## -->
+                    <div class="slick-container">
+                        <div class="slick-single-content">
+                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 1" />
+                            <p>Membro 1</p>
+                            <span>logos redes sociais</span>
+                        </div><!-- slick-single-content -->
+                        <div class="slick-single-content">
+                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 2" />
+                            <p>Membro 2</p>
+                            <span>logos redes sociais</span>
+                        </div><!-- slick-single-content -->
+                        <div class="slick-single-content">
+                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 3" />
+                            <p>Membro 3</p>
+                            <span>logos redes sociais</span>
+                        </div><!-- slick-single-content -->
+                        <div class="slick-single-content">
+                            <img src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 4" />
+                            <p>Membro 4</p>
+                            <span>logos redes sociais</span>
+                        </div><!-- slick-single-content -->
+
+                    </div><!-- slick-container -->
+
+                </div><!-- col -->
+            </div><!-- row -->
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h3>Fale Conosco</h3>
+                    <form action="#" method="POST">
+                        <input class="mt-sm-3 mb-sm-3 w-25" type="text" name="name" placeholder="Nome" /><div></div>
+                        <input class="mt-sm-3 mb-sm-3 w-25" type="email" name="email" placeholder="E-mail" /><div></div>
+                        <textarea class="mt-sm-3 mb-sm-3 w-25" name="message" cols="30" rows="10" placeholder="Mensagem" ></textarea><div></div>
+                        <button class="w-25" type="submit">Enviar</button>
+                    </form>
                 </div><!-- col -->
             </div><!-- row -->
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1> Time
-                </div><!-- col -->
-            </div><!-- row -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h1> Forms de novo
-                </div><!-- col -->
-            </div><!-- row -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <h1> Rodapé
+                    <h1> Rodapé</h1>
                 </div><!-- col -->
             </div><!-- row -->
             
@@ -116,5 +152,10 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        -->
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
