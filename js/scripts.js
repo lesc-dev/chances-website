@@ -5,6 +5,7 @@ let topCenterLogo = document.querySelector('#logo-topCenter');
 // MENU SCROLL
 window.addEventListener('scroll', function() {
     let top = window.pageYOffset || document.documentElement.scrollTop; //detecta o nº de pixels "scrollados" na pagina
+    img = this.document.getElementById('logo');
 
     if (top == 0) { //esconde o menu horizontal e faz aparecer o menu lateral
         // menu.classList.add('collapse');
@@ -13,6 +14,8 @@ window.addEventListener('scroll', function() {
         menu.classList.remove('bg-light');
         menu.classList.remove('menu-links-light')
         menu.classList.add('menu-links-dark')
+        img.src = 'images/logo_magenta.png'
+        
     } else if (window.innerWidth >= 768 && top >= 5) { //esconde o menu lateral e passa a mostrar o menu horizontal
         // firstNav.classList.add('collapse');
         // topCenterLogo.classList.add('collapse');
@@ -20,6 +23,7 @@ window.addEventListener('scroll', function() {
         menu.classList.add('bg-light');
         menu.classList.add('menu-links-light')
         menu.classList.remove('menu-links-dark')
+        img.src = 'images/logo_transparent.png'
     }
 
 })

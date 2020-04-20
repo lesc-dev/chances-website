@@ -57,7 +57,7 @@ ul li {
 
 .why-startups .aux-text{
     text-align: left;
-    padding-left: 50vw;
+    padding-left: 55vw;
     padding-top: 4vh;
     font-size: 1.5vw;
 }
@@ -83,7 +83,7 @@ ul li {
     height: 6vw;
     background-color: #fe0080;
     position: absolute;
-    margin-left: 42%;
+    margin-left: 47%;
     margin-top: 1vw;
 }
 
@@ -121,30 +121,65 @@ ul li {
     border-bottom-right-radius: 50%; */
     border-radius: 50%;
     width: 30vw;
-    height: 30vw;
-    background-color:#6cddaa;
+    height: 31vw;
+    background-color:white;
+    background-image: radial-gradient(#6cddaa 20%, white 10%);
+    background-position: 0 0;
+    background-size: 25px 25px;
     margin-left: 79vw;
     margin-top: -20vw;
     z-index: 0;
     position: absolute;
+    overflow-x: hidden !important;
 }
 
-.advantages {
-    background-color: #6cddaa;
-    height: 37vh;
-}
 
 .advantages-snippet{
-    padding-left: 50px;
+    background-color: #6cddaa;
+    height: 53vh;
+    /* padding-left: 50px; */
+    display: inline-block;
+    text-align: center;
+}
+
+.advantages-snippet p{
+    padding-top: 2vw;
 }
 
 .circle-2{
     border-radius: 50%;
     width: 6vw;
     height: 6vw;
-    margin-top: 10vh;
+    margin-top: 15vh;
     background-color: #fe0080;
-    position: absolute;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.signup {
+    z-index: 1;
+    background-color: white;
+}
+
+.signup h2{
+    text-align: left;
+    font-size: 3vw;
+}
+
+.signup h1{
+    text-align: left;
+    font-size: 4vw;
+}
+
+.signup .text{
+    margin-left: 10vw;
+    margin-top: 3vh;
+}
+
+.signup button{
+    background-color: #6cddaa;
+    font-size: 1.5vw;
+    width: 30vw;
 }
 
 /***************/
@@ -206,3 +241,15 @@ input, textarea {
 /********/
 /* Form */
 /********/
+
+@media screen and (max-width: 1400px){
+    .why-startups{
+        height: 30vw;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    .why-startups{
+        height: 25vh;
+    } 
+}
