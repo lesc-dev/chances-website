@@ -1,8 +1,13 @@
-/****************/
-/* TOP IMAGE */
-/***************/
+:root {
+    --verde-claro: #6cddaa;
+    --rosa-pink: #fe0080;
+}
 
-.image-container{
+/*************/
+/* TOP IMAGE */
+/*************/
+
+.image-container {
     position: absolute;
 
     top: 0;
@@ -13,12 +18,17 @@
     background-image: url("../images/top-background.png");
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
     width:100%;
     z-index: 1;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 p {
@@ -42,71 +52,71 @@ ul li {
     margin: 0 10px;
 }
 
-.menu-links-dark li{
+.menu-links-dark li {
     color: white;
 }
 
-.menu-links-light li{
-    color: #fe0080;
+.menu-links-light li {
+    color: var(--rosa-pink);
 }
 
-.why-startups{
+.why-startups {
     background-color: white;
     height: 50vh;
 }
 
-.why-startups .aux-text{
+.why-startups .aux-text {
     text-align: left;
     padding-left: 55vw;
     padding-top: 4vh;
     font-size: 1.5vw;
 }
 
-.why-startups .title{
+.why-startups .title {
     padding-left: 15%;
     padding-top: 2%;
     margin: 0px;
     text-align: left;
 }
 
-.why-startups h1{
+.why-startups h1 {
     font-size: 3vw;
 }
 
-.why-startups h3{
+.why-startups h3 {
     font-size: 1.5vw;
 }
 
-.circle{
+.circle {
     border-radius: 50%;
     width: 6vw;
     height: 6vw;
-    background-color: #fe0080;
+    background-color: var(--rosa-pink);
     position: absolute;
     margin-left: 47%;
     margin-top: 1vw;
 }
 
-.circle h2{
+.circle h2 {
     padding-top: 30%;
     color: white;
     font-size: 2vw;
 }
 
-.circle-dashed{
+.circle-dashed {
     /* border-top-right-radius: 50%;
     border-bottom-right-radius: 50%; */
     border-radius: 50%;
     width: 50vw;
     height: 50vw;
-    background-color:#6cddaa;
+    background-color:var(--verde-claro);
     margin-left: -25vw;
     margin-top: 15vh;
     position: absolute;
     z-index: 0;
 }
 
-.dash-rect{
+.dash-rect {
     width: 24vw;
     height: 2.5vw;
     background-color: white;
@@ -116,42 +126,41 @@ ul li {
     transform: rotate(-45deg);
 }
 
-.circle-dotted{
+.circle-dotted {
     /* border-top-right-radius: 50%;
     border-bottom-right-radius: 50%; */
     border-radius: 50%;
     width: 30vw;
     height: 31vw;
     background-color:white;
-    background-image: radial-gradient(#6cddaa 20%, white 10%);
+    background-image: radial-gradient(var(--verde-claro) 20%, white 10%);
     background-position: 0 0;
     background-size: 25px 25px;
     margin-left: 79vw;
     margin-top: -20vw;
     z-index: 0;
     position: absolute;
-    overflow-x: hidden !important;
 }
 
 
-.advantages-snippet{
-    background-color: #6cddaa;
+.advantages-snippet {
+    background-color: var(--verde-claro);
     height: 53vh;
     /* padding-left: 50px; */
     display: inline-block;
     text-align: center;
 }
 
-.advantages-snippet p{
+.advantages-snippet p {
     padding-top: 2vw;
 }
 
-.circle-2{
+.circle-2 {
     border-radius: 50%;
     width: 6vw;
     height: 6vw;
     margin-top: 15vh;
-    background-color: #fe0080;
+    background-color: var(--rosa-pink);
     margin-left: auto;
     display: inline-block;
 }
@@ -161,25 +170,26 @@ ul li {
     background-color: white;
 }
 
-.signup h2{
+.signup h2 {
     text-align: left;
     font-size: 3vw;
 }
 
-.signup h1{
+.signup h1 {
     text-align: left;
     font-size: 4vw;
 }
 
-.signup .text{
+.signup .text {
     margin-left: 10vw;
     margin-top: 3vh;
 }
 
-.signup button{
-    background-color: #6cddaa;
+.signup button, .form-contato button {
+    background-color: var(--verde-claro);
     font-size: 1.5vw;
     width: 30vw;
+    border: none;
 }
 
 /***************/
@@ -208,7 +218,7 @@ ul li {
     margin-right: auto;
     }
 
-.team .slick-single-content{
+.team .slick-single-content {
     text-align: center;
 }
 
@@ -220,16 +230,15 @@ input, textarea {
     margin-bottom: 10px;
 }
 
-.slick-dots li button:before
-{
+.slick-dots li button:before {
     font-size: 20px !important;
-    color: #fe0080 !important;
+    color: var(--rosa-pink) !important;
     line-height: 20px;
 }
 
 .social-link {
     font-size: 20px;
-    color: #fe0080;
+    color: var(--rosa-pink);
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -242,14 +251,16 @@ input, textarea {
 /* Form */
 /********/
 
-@media screen and (max-width: 1400px){
-    .why-startups{
+
+/*********/
+@media screen and (max-width: 1400px) {
+    .why-startups {
         height: 30vw;
     } 
 }
 
-@media screen and (max-width: 600px){
-    .why-startups{
+@media screen and (max-width: 600px) {
+    .why-startups {
         height: 25vh;
     } 
 }
