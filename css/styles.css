@@ -91,7 +91,7 @@ ul li {
     border-radius: 50%;
     width: 6vw;
     height: 6vw;
-    background-color: var(--rosa-pink);
+    background-image: var(--rosa-pink);
     position: absolute;
     margin-left: 47%;
     margin-top: 1vw;
@@ -153,6 +153,7 @@ ul li {
 
 .advantages-snippet p {
     padding-top: 2vw;
+    font-size: 1.2vw;
 }
 
 .circle-2 {
@@ -185,11 +186,13 @@ ul li {
     margin-top: 3vh;
 }
 
-.signup button, .form-contato button {
+.signup-button, .form-contato button {
     background-color: var(--verde-claro);
     font-size: 1.5vw;
     width: 30vw;
     border: none;
+    color: white;
+    text-align: center;
 }
 
 /***************/
@@ -263,4 +266,21 @@ input, textarea {
     .why-startups {
         height: 25vh;
     } 
+
+    .top-logo {
+        padding-top: 50%;
+    }
+
+    .advantages-snippet p {
+        padding-top: -1vw;
+        font-size: 7vw;
+        
+    }
+
+    .circle-2 {
+        
+        width: 20vw;
+        height: 20vw;
+
+    }
 }
