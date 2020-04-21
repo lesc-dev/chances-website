@@ -277,10 +277,39 @@ input, textarea {
         
     }
 
+    .circle {
+        
+        width: 20vw;
+        height: 20vw;
+        margin-left: 27%;
+    }
+
     .circle-2 {
         
         width: 20vw;
         height: 20vw;
 
+    }
+
+    .why-startups .aux-text {
+        text-align: left;
+        padding-left: 55vw;
+        padding-top: 1.5vh;
+        font-size: 1.5vw;
+    }
+    
+    .why-startups .title {
+        padding-left: 15%;
+        padding-top: 2%;
+        margin: 0px;
+        text-align: left;
+    }
+    
+    .why-startups h1 {
+        font-size: 7vw;
+    }
+    
+    .why-startups h3 {
+        font-size: 3.5vw;
     }
 }
