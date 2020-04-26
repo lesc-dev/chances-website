@@ -33,6 +33,19 @@ body {
 
 p {
     margin: 0 !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -63,6 +76,7 @@ ul li {
 .why-startups {
     background-color: white;
     height: 50vh;
+    z-index:0;
 }
 
 .why-startups .aux-text {
@@ -116,6 +130,19 @@ ul li {
     z-index: 0;
 }
 
+.circle-dashed-2 {
+    /* border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%; */
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    background-color:var(--verde-claro);
+    margin-left: 75vw;
+    margin-bottom: 20vh;
+    margin-top: -65vh;
+    position: absolute;
+    z-index: -3;
+}
 .dash-rect {
     width: 24vw;
     height: 2.5vw;
@@ -149,6 +176,7 @@ ul li {
     /* padding-left: 50px; */
     display: inline-block;
     text-align: center;
+    z-index: 9;
 }
 
 .advantages-snippet p {
@@ -169,11 +197,12 @@ ul li {
 .signup {
     z-index: 1;
     background-color: white;
+    height: 40vh;
 }
 
 .signup h2 {
     text-align: left;
-    font-size: 3vw;
+    font-size: 2.7vw;
 }
 
 .signup h1 {
@@ -183,16 +212,17 @@ ul li {
 
 .signup .text {
     margin-left: 10vw;
-    margin-top: 3vh;
+    margin-top: 6vh;
 }
 
 .signup-button, .form-contato button {
     background-color: var(--verde-claro);
-    font-size: 1.5vw;
     width: 30vw;
     border: none;
     color: white;
     text-align: center;
+    border-radius: 30px; 
+    font-size: 1.5vw;
 }
 
 /***************/
@@ -213,12 +243,13 @@ ul li {
 }
 
 .team .slick-single-content img {
-    width: 30%; 
+    width: 30vh; 
     text-align: center;
     border-radius: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 5%;
     }
 
 .team .slick-single-content {
@@ -250,6 +281,10 @@ input, textarea {
     color: #eb5da4
 }
 
+.top h1{
+    font-size: 3.3vw;
+}
+
 /********/
 /* Form */
 /********/
@@ -264,7 +299,7 @@ input, textarea {
 
 @media screen and (max-width: 600px) {
     .why-startups {
-        height: 25vh;
+        height: 30vh;
     } 
 
     .top-logo {
@@ -291,6 +326,7 @@ input, textarea {
 
     }
 
+
     .why-startups .aux-text {
         text-align: left;
         padding-left: 55vw;
@@ -312,4 +348,47 @@ input, textarea {
     .why-startups h3 {
         font-size: 3.5vw;
     }
+
+    .signup h2 {
+        text-align: left;
+        font-size: 5vw;
+    }
+    
+    .signup h1 {
+        text-align: left;
+        font-size: 6vw;
+    }
+    
+    .signup .text {
+        margin-left: 10vw;
+        margin-top: 8vh;
+    }
+
+    .signup-button, .form-contato button {
+        background-color: var(--verde-claro);
+        width: 60vw;
+        border: none;
+        color: white;
+        text-align: center;
+        border-radius: 30px; 
+        font-size: 25vw;
+    }
+
+    .top h1{
+        font-size: 5.5vw;
+    }
+    
+    .circle-dashed {
+        /* border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%; */
+        border-radius: 50%;
+        width: 50vw;
+        height: 50vw;
+        background-color:var(--verde-claro);
+        margin-left: -25vw;
+        margin-top: 20vh;
+        position: absolute;
+        z-index: 0;
+    }
+
 }
