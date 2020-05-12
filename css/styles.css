@@ -3,9 +3,29 @@
     --rosa-pink: #fe0080;
 }
 
-/*************/
-/* TOP IMAGE */
-/*************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    margin: 0 !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+/* BANNER CENTRAL */
+
+.main-banner {
+    min-height:100vh;
+}
 
 .image-container {
     position: absolute;
@@ -21,43 +41,42 @@
     background-position: center;
     width:100%;
     z-index: 1;
+    text-align: center;
 }
 
-* {
-    box-sizing: border-box;
+.image-container h1 {
+    color: white;
+    margin-top: 3%;
 }
 
-body {
-    overflow-x: hidden;
+.top-logo img {
+    padding-top: 5%;
 }
 
-p {
-    margin: 0 !important;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.logo-text {
+    padding-top: 2%;
 }
 
-h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.image-container h1 span {
+    background-color: #6cddaa;
 }
 
-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.btn-startups {
+    width: 25vw;
+    margin-right: 10%;
+    margin-top: 3%;
 }
 
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.btn-pessoas {
+    width: 25vw;
+    margin-top: 3%;
 }
 
-header {
-    padding: 15px 0;
-}
 
-ul li {
-    list-style-type: none;
-}
+/* MENU */
 
 .menu {
-    padding: 15px 0;
+    padding: 0px 0;
 }
 
 .menu ul li {
@@ -72,6 +91,13 @@ ul li {
 .menu-links-light li {
     color: var(--rosa-pink);
 }
+
+.menu img#logo {
+    width: 100px; height: 100px;
+}
+
+
+/* POR QUE STARTUPS? */
 
 .why-startups {
     background-color: white;
@@ -93,12 +119,20 @@ ul li {
     text-align: left;
 }
 
+.why-startups .title .startups {
+    text-decoration-line: overline;
+}
+
 .why-startups h1 {
     font-size: 3vw;
 }
 
 .why-startups h3 {
     font-size: 1.5vw;
+}
+
+.h3-alemDisso {
+    padding-top:10vh; padding-bottom: 2vh;
 }
 
 .circle {
@@ -143,13 +177,54 @@ ul li {
     position: absolute;
     z-index: -3;
 }
-.dash-rect {
+
+.dash-rect-1 {
     width: 24vw;
     height: 2.5vw;
     background-color: white;
     z-index: 1;
     margin-left: 20vw !important;
     margin-top: 11vw;
+    transform: rotate(-45deg);
+}
+
+.dash-rect-2 {
+    width: 29vw;
+    height: 2.5vw;
+    background-color: white;
+    z-index: 1;
+    margin-left: 20vw !important;
+    margin-top: 4vw;
+    transform: rotate(-45deg);
+}
+
+.dash-rect-3 {
+    width: 33vw;
+    height: 2.5vw;
+    background-color: white;
+    z-index: 1;
+    margin-left: 20vw !important;
+    margin-top: 4vw;
+    transform: rotate(-45deg);
+}
+
+.dash-rect-4 {
+    width: 50vw;
+    height: 2.5vw;
+    background-color: white;
+    z-index: 1;
+    margin-left: -8vw !important;
+    margin-top: -9vw;
+    transform: rotate(-45deg);
+}
+
+.dash-rect-5 {
+    width: 50vw;
+    height: 2.5vw;
+    background-color: white;
+    z-index: 1;
+    margin-left: -9.8vw !important;
+    margin-top: -9vw;
     transform: rotate(-45deg);
 }
 
@@ -169,7 +244,7 @@ ul li {
     position: absolute;
 }
 
-
+/* VANTAGENS/DIFERENCIAIS */
 .advantages-snippet {
     background-color: var(--verde-claro);
     height: 53vh;
@@ -194,6 +269,8 @@ ul li {
     display: inline-block;
 }
 
+
+/* SIGNUP FORM */
 .signup {
     z-index: 1;
     background-color: white;
@@ -201,18 +278,19 @@ ul li {
 }
 
 .signup h2 {
-    text-align: left;
-    font-size: 2.7vw;
+    font-size: 2.5rem;
 }
 
-.signup h1 {
-    text-align: left;
-    font-size: 4vw;
+.signup h3 {
+    font-size: 2rem;
 }
 
 .signup .text {
-    margin-left: 10vw;
     margin-top: 6vh;
+}
+
+.signup .prop-values {
+    text-decoration-line: underline; padding-top: 1%; margin-bottom: 5%;
 }
 
 .signup-button, .form-contato button {
@@ -225,9 +303,9 @@ ul li {
     font-size: 1.5vw;
 }
 
-/***************/
-/* Nosso Time */
-/***************/
+
+/* NOSSO TIME */
+
 .team {
     width: 100%;
 }
@@ -281,16 +359,9 @@ input, textarea {
     color: #eb5da4
 }
 
-.top h1{
-    font-size: 3.3vw;
-}
 
-/********/
-/* Form */
-/********/
+/* MEDIA QUERIES */
 
-
-/*********/
 @media screen and (max-width: 1400px) {
     .why-startups {
         height: 30vw;
@@ -308,7 +379,7 @@ input, textarea {
 
     .advantages-snippet p {
         padding-top: -1vw;
-        font-size: 7vw;
+        font-size: 5vw;
         
     }
 

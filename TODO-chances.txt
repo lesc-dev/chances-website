@@ -1,0 +1,9 @@
+TO DO:
+- acertar o menu para mobile
+- Retirar os botões startup e pessoas e colocar botões pra download do app pra Android e iOS
+(os botões startup e pessoas vão para a página de cadastro: sou startup / sou pessoa)
+- acertar o slider para ser responsivo
+- acertar a seção 'pq startups?' para ser responsivo
+- acertar a seção 'vantagens' para ser responsivo
+- acertar a seção 'propósito e valores' para ser responsivo
+- acertar a seção 'Nosso Time' para ser responsivo

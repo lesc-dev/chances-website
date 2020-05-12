@@ -19,15 +19,19 @@
     <body>
         <header class="container-fluid">
             <div class="row">
-                <div style="min-height:100vh">
-                    <div class="image-container img-fluid top" style="text-align: center;">
-                        <div class="top-logo"><img class="img-fluid" src="images/logo-top.png" style="padding-top: 5%;"></div>
-                        <div><img class="img-fluid" src="images/logo-text-top.png" style="padding-top: 2%;"></div>
-                        <h1 style="color: white; margin-top: 3%;"> Estamos felizes em apresentar nossa nova plataforma</h1>
-                        <h1 style="color: white; margin-top: 1%;"><span style="background-color: #6cddaa;">CONECTORA DE PESSOAS E STARTUPS</span></h1>
-                        <div style="margin-top: 2%;">
-                            <button type="button" class="btn signup-button" style="width: 25vw; margin-right: 10%; margin-top: 3%;"><b>Startups</b></button>
-                            <button type="button" class="btn signup-button" style="width: 25vw; margin-top: 3%;"><b>Pessoas</b></button>
+                <div class="main-banner">
+                    <div class="image-container img-fluid top">
+                        <div class="top-logo">
+                            <img class="img-fluid" src="images/logo-top.png">
+                        </div>
+                        <div>
+                            <img class="img-fluid logo-text" src="images/logo-text-top.png">
+                        </div>
+                        <h1>Estamos felizes em apresentar nossa nova plataforma</h1>
+                        <h1><span>CONECTANDO PESSOAS E STARTUPS</span></h1>
+                        <div>
+                            <button type="button" class="btn signup-button btn-startups"><b>Startups</b></button>
+                            <button type="button" class="btn signup-button btn-pessoas"><b>Pessoas</b></button>
                         </div>
                         
                     </div>
@@ -36,13 +40,14 @@
                 <!-- menu -->
                 <nav class="menu col-sm-12 fixed-top">
                     <div class="col-sm-4 d-inline-block">
-                        <a href="#"><img id="logo" src="images/logo_magenta.png" style="width: 100px; height: 100px;" alt="Chances logo" /></a>
+                        <a href="#"><img id="logo" src="images/logo_magenta.png" alt="Chances logo" /></a>
                     </div>
 
                         <ul class="col-sm-7 d-inline-block menu text-right menu-links-dark">
                             <a href="#"><li>Home</li></a>
                             <a href="#"><li>Diferenciais</li></a>
                             <a href="#"><li>Nosso Time</li></a>
+                            <a href="#"><li>Cadastre-se</li></a>
                             <a href="#"><li>Fale Conosco</li></a>
                         </ul>
                 </nav>
@@ -53,55 +58,53 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-12 why-startups">
-
                     <div class="circle-dashed">
-                        <div class="dash-rect"></div>
-                        <div class="dash-rect" style="margin-top: 4vw; width: 29vw;"></div>
-                        <div class="dash-rect" style="margin-top: 4vw; width: 33vw;"></div>
-                        <div class="dash-rect" style="margin-top: -9vw; width: 50vw; margin-left: -8vw !important;"></div>
-                        <div class="dash-rect" style="margin-top: -9vw; width: 50vw; margin-left: -9.8vw !important;"></div>
-                    </div>
+                        <div class="dash-rect-1"></div>
+                        <div class="dash-rect-2"></div>
+                        <div class="dash-rect-3"></div>
+                        <div class="dash-rect-4"></div>
+                        <div class="dash-rect-5"></div>
+                    </div><!-- circle-dashed -->
+
                     <div class="circle-dotted"></div>
 
                     <div class="title">
-
                         <h1>Por que</h1>
-                        <h1 style="text-decoration-line: overline;">STARTUPS?</h1>
-
-                    </div><!--div-->
+                        <h1 class="startups">STARTUPS?</h1>
+                    </div><!-- title -->
 
                     <div class="circle"><img class="img-fluid" src="images/icon-1.png"></div>
                     <div class="aux-text">
                         <h3>Ambientes de trabalho menores,</h3>
                         <h3>mais flexíveis, descontraídos e</h3>
                         <h3>inovadores.</h3>
-                    </div><!--div-->
+                    </div><!-- aux-text -->
                     
-                    <h3 style="padding-top:10vh; padding-bottom: 2vh;">Além disso:</h3>
-                </div><!-- col -->
+                    <h3 class="h3-alemDisso">Além disso:</h3>
+                </div><!-- why-startups -->
             </div><!-- row -->
             
 
             <div class="row text-center">
                 <div class="col-md-3 advantages-snippet">
                     <div class="circle-2"><img class="img-fluid" src="images/icon-2.png"></div>
-                    <p> Elas tem forte <br> poder de <br> contratação</p>
-                </div><!-- col -->
+                    <p>Elas têm forte<br />poder de<br />contratação</p>
+                </div><!-- advantages-snippet -->
 
                 <div class="col-md-3 advantages-snippet">
                     <div class="circle-2"><img class="img-fluid" src="images/icon-3.png"></div>
-                    <p> Elas são o que muitos <br> consideram como <br> <b>trabalho inspirador</b></p>
-                </div><!-- col -->
+                    <p>Elas são o que muitos<br />consideram como<br /><b>trabalho inspirador</b></p>
+                </div><!-- advantages-snippet -->
 
                 <div class="col-md-3 advantages-snippet">
                     <div class="circle-2"><img class="img-fluid" src="images/icon-4.png"></div>
-                    <p> A priorização de <br> gastos não permite <br> contratar uma empresa <br> de recrutamento</p>
-                </div><!-- col -->
+                    <p>A priorização de<br />gastos não permite<br />contratar uma empresa<br />de recrutamento</p>
+                </div><!-- advantages-snippet -->
 
                 <div class="col-md-3 advantages-snippet">
                     <div class="circle-2"><img class="img-fluid" src="images/icon-5.png"></div>
-                    <p>Tendem a contratar <br> recém formados ou com <br> pouca experiência, <br> valorizam as <b>soft skills</b></p>
-                </div><!-- col -->
+                    <p>Tendem a contratar<br />recém formados ou com<br />pouca experiência,<br />valorizam as <b>soft skills</b></p>
+                </div><!-- advantages-snippet -->
             </div><!-- row -->
 
             <div class="row text-center">
@@ -109,19 +112,19 @@
                     <div class="circle-dotted">
                     </div>
                     <div class="text">
-                        <h2> Um aplicativo para conectar</h2>
-                        <h2> jovens e startups por</h2>
-                        <h1 style="text-decoration-line: underline; padding-top: 1%; margin-bottom: 5%;"> <b>PROPÓSITO E VALORES</b></h1>
+                        <h3>Um aplicativo para conectar</h2>
+                        <h3>jovens e startups por</h2>
+                        <h2 class="prop-values"><b>PROPÓSITO E VALORES</b></h1>
                     </div>
-                    <button type="button" class="btn signup-button">Cadastre-se aqui</button>
-                </div><!-- col -->
+                    <button type="button" class="btn signup-button">Cadastre-se aqui!</button>
+                </div><!-- signup -->
             </div><!-- row -->
 
             <div class="row text-center">
                 <div class="team col-md-12">
                     <h3>Nosso Time</h3>
                     <h5>Conheça as pessoas responsáveis por transformar o Chances em realidade.</h5>
-                    <!-- ## TO DO: FIX THE SLIDER ## -->
+                    
                     <div class="slick-container">
                         <div class="slick-single-content">
                             <img class="img-fluid" src="https://lesc-dev.github.io/website/images/members/tiago-toledo.jpg" alt="Foto Membro 1" />
@@ -146,7 +149,7 @@
 
                     </div><!-- slick-container -->
 
-                </div><!-- col -->
+                </div><!-- team -->
             </div><!-- row -->
 
             <!-- <div class="row text-center">
@@ -169,7 +172,14 @@
             
         </div><!-- container-fluid -->
         
-
+        <footer>
+            <p>Liga de Empreendedorismo de São Carlos &copy; 2020. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-linkedin"></i></span>
+            </div><!-- social-media -->
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
