@@ -1,5 +1,5 @@
 let firstNav = document.querySelector('nav'); //first nav tag of <body>
-let menu = document.querySelector('nav.menu');
+let menu = document.querySelector('nav.menu-desktop');
 let topCenterLogo = document.querySelector('#logo-topCenter');
 
 // MENU SCROLL
@@ -11,19 +11,19 @@ window.addEventListener('scroll', function() {
         // menu.classList.add('collapse');
         // firstNav.classList.remove('collapse');
         // topCenterLogo.classList.remove('collapse');
-        menu.classList.remove('bg-light');
-        menu.classList.remove('menu-links-light')
-        menu.classList.add('menu-links-dark')
-        img.src = 'images/logo_magenta.png'
+        // menu.classList.remove('bg-light');
+        menu.classList.remove('menu-links-light');
+        menu.classList.add('menu-links-dark');
+        img.src = 'images/logo_magenta.png';
         
     } else if (window.innerWidth >= 768 && top >= 5) { //esconde o menu lateral e passa a mostrar o menu horizontal
         // firstNav.classList.add('collapse');
         // topCenterLogo.classList.add('collapse');
         // menu.classList.remove('collapse');
-        menu.classList.add('bg-light');
-        menu.classList.add('menu-links-light')
-        menu.classList.remove('menu-links-dark')
-        img.src = 'images/logo_transparent.png'
+        // menu.classList.add('bg-light');
+        menu.classList.add('menu-links-light');
+        menu.classList.remove('menu-links-dark');
+        img.src = 'images/logo_transparent.png';
     }
 
 })
